@@ -19,7 +19,7 @@ async function main() {
 		projectId: VERCEL_PROJECT_ID,
 		token: VERCEL_TOKEN,
 		resources: { vcpus: 2 },
-		timeout: ms("10m"),
+		timeout: ms("45m"), // max session time
 		ports: [25565],
 		runtime: "node22",
 	});
