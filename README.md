@@ -111,20 +111,21 @@ After successful startup, you'll see output like:
 ```
 Minecraft server is up and ngrok tunnel is ready!
 Connect using: tcp://0.tcp.ngrok.io:12345
-Note: you don't have to add tcp:// in the server ip
+Note: don't add tcp:// in the server ip
 ```
 
 In Minecraft:
 1. Go to Multiplayer → Add Server
 2. Enter server address: `0.tcp.ngrok.io:12345` (without `tcp://`)
-3. Connect and enjoy!
+3. Connect and enjoy your server that runs on vercel's hardware :]
 
 ## Important Notes
 
-- **Temporary**: The server runs for a maximum of 45 minutes
-- **Resources**: Limited to 2 vCPUs and shared memory
+- **Duration**: Sandboxes have a maximum runtime duration of 45 minutes, with a default of 5 minutes
+- **Max Resources**: 8 vCPUs. You will get 2048 MB of memory per vCPU
 - **Data**: Server data is not persistent between runs
-- **Cost**: Uses Vercel Sandbox compute resources (check your billing)
+- **Cost**: Uses Vercel Sandbox compute resources (check your plan and alloted usage + billing)
+- **Bandwidth**: If you're on the free tier of Ngrok, you might get disconnect if you hit bandwidth limit
 
 ## Troubleshooting
 
